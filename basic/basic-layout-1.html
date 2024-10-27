@@ -7,9 +7,28 @@
     <link rel="stylesheet" href="../style.css">
     <style>
       body {
+        min-height: 100vh;
         display: grid;
+        grid-template-areas:
+        "header header"
+        "nav main"
+        "footer footer";
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr 4fr 1fr;
+        gap: 1em;
       }
-      /* Doe hier jouw ding! */
+      header {
+        grid-area: header;
+      }
+      nav {
+        grid-area: nav;
+      }
+      main {
+        grid-area: main;
+      }
+      footer {
+        grid-area: footer;
+      }
     </style>
   </head>
   <body id="basic-layout-1">

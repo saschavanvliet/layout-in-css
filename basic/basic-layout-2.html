@@ -6,7 +6,30 @@
     <title>Basic Layout 2</title>
     <link rel="stylesheet" href="../style.css">
     <style>
-      /* Doe hier jouw ding! */
+        body {
+        min-height: 100vh;
+        display: grid;
+        grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.5fr 0.7fr 5fr 1fr ;
+        gap: 0.7em;
+      }
+      header {
+        grid-area: header;
+      }
+      nav {
+        grid-area: nav;
+      }
+      main {
+        grid-area: main;
+      }
+      footer {
+        grid-area: footer;
+      }
     </style>
   </head>
   <body id="basic-layout-2">
